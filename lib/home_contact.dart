@@ -26,22 +26,17 @@ class _HomeContactState extends State<HomeContact> {
       body: CustomScrollView(
         slivers: <Widget>[
           const SliverAppBar(
-            backgroundColor: Colors.white,
             expandedHeight: 200,
             flexibleSpace: FlexibleSpaceBar(
               titlePadding: EdgeInsets.only(bottom: 50.0),
               centerTitle: true,
               title: Text(
-                style: TextStyle(
-                  color: Colors.black,
-                ),
                 'Contatos',
               ),
             ),
           ),
           SliverAppBar(
             elevation: 0,
-            shadowColor: Colors.black,
             actions: <Widget>[
               IconButton(
                 splashRadius: 25,
@@ -60,7 +55,6 @@ class _HomeContactState extends State<HomeContact> {
                 },
               ),
             ],
-            backgroundColor: Colors.white,
             pinned: true,
           ),
           SliverList(

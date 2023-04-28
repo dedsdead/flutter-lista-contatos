@@ -17,6 +17,14 @@ void main() async {
 
   runApp(
     MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.white,
+        colorScheme: const ColorScheme.light(
+            background: Colors.white,
+            shadow: Colors.black,
+            primary: Colors.white,
+            secondary: Colors.white),
+      ),
       routes: {
         Routes.home: (context) => const HomeContact(),
         Routes.form: (context) => FormContact(),

@@ -19,7 +19,14 @@ class FormContactFielder extends StatelessWidget {
       controller: controller,
       keyboardType: textInputType,
       decoration: InputDecoration(
-          hintText: hintText, filled: true, icon: Icon(iconData)),
+        focusColor: Colors.black,
+        hintText: hintText,
+        filled: true,
+        icon: Icon(
+          iconData,
+          color: Colors.black,
+        ),
+      ),
       validator: (value) {
         if (value == null || value.trim().isEmpty) {
           return 'Campo $hintText não pode ser vazio!';

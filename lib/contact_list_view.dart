@@ -39,9 +39,13 @@ class _ContactListViewState extends State<ContactListView> {
           elevation: 0.0,
           child: ExpansionTile(
             title: Text(
-                "${widget.users.values.elementAt(index).userId}: ${widget.users.values.elementAt(index).userName}",
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+              "${widget.users.values.elementAt(index).userId}: ${widget.users.values.elementAt(index).userName}",
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+                color: Colors.black,
+              ),
+            ),
             subtitle: Text(widget.users.values.elementAt(index).userEmail),
             children: <Widget>[
               Row(

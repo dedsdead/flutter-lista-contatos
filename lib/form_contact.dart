@@ -52,7 +52,24 @@ class FormContact extends StatelessWidget {
     return Form(
       key: _formKey,
       child: Scaffold(
-        appBar: AppBar(title: const Text("Lista de Contatos")),
+        appBar: AppBar(
+          leading: IconButton(
+            iconSize: 25,
+            color: Colors.black,
+            splashRadius: 25,
+            alignment: Alignment.center,
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            icon: const Icon(
+              Icons.arrow_back_ios,
+            ),
+          ),
+          title: const Text(
+            "Lista de Contatos",
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
         body: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -72,7 +89,10 @@ class FormContact extends StatelessWidget {
                             _formKey.currentState?.save();
                             Navigator.of(context).pop();
                           },
-                          child: const Text("Cancelar"),
+                          child: const Text(
+                            "Cancelar",
+                            style: TextStyle(color: Colors.black),
+                          ),
                         ),
                       ),
                       const SizedBox(width: 20),
@@ -99,7 +119,10 @@ class FormContact extends StatelessWidget {
                               }
                             }
                           },
-                          child: const Text("Salvar"),
+                          child: const Text(
+                            "Salvar",
+                            style: TextStyle(color: Colors.black),
+                          ),
                         ),
                       ),
                     ]),

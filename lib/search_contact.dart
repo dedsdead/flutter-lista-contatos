@@ -30,15 +30,11 @@ class _SearchContactState extends State<SearchContact> {
       body: CustomScrollView(slivers: <Widget>[
         const SliverAppBar(
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.white,
           expandedHeight: 200,
           flexibleSpace: FlexibleSpaceBar(
             titlePadding: EdgeInsets.only(bottom: 50.0),
             centerTitle: true,
             title: Text(
-              style: TextStyle(
-                color: Colors.black,
-              ),
               'Pesquisar',
             ),
           ),
@@ -53,8 +49,8 @@ class _SearchContactState extends State<SearchContact> {
                 alignment: Alignment.topCenter,
                 onPressed: () => searchController.clear(),
                 icon: const Icon(Icons.clear),
-                splashRadius: 25,
                 color: Colors.black,
+                splashRadius: 25,
               ),
             ),
             controller: searchController,
