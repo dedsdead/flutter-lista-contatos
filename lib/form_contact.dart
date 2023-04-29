@@ -3,8 +3,6 @@ import 'package:formulario_contatos/common/box_user.dart';
 import 'package:formulario_contatos/form_contact_fielder.dart';
 import 'package:formulario_contatos/model/user.dart';
 
-//TODO: Arrumar o visual do form!
-
 class ScreenArguments {
   final UserModel user;
   final int position;
